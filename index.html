@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <header class="fixed transition-all flex justify-between lg:my-4 lg:px-20 px-10 z-10 w-full lg:bg-transparent bg-black">
+    <header class="fixed transition-all flex justify-between lg:my-4 lg:px-20 pl-2 pr-6 z-10 w-full lg:bg-transparent bg-black">
         <!-- Desktop Menu -->
         <nav class="justify-between w-full bg-black rounded-full lg:flex hidden transition-all">
             <ul class="flex items-center">
@@ -366,7 +366,6 @@
                 </div>
             </div>
         </section>
-        
 
         <div aria-hidden="true" class="bg-orange-400 w-full overflow-hidden -rotate-3 mt-10 py-5">
             <div class="bg-white py-1">
@@ -790,10 +789,138 @@
             </div>
         </section>
         
+        <section class="contact py-20 px-4 md:px-20">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12 md:col-span-6">
+                    <h2 class="text-5xl font-">Let's <span class="text-orange-500">Connect</span> & 
+                        <br> <span class="text-orange-500">Collaborate</span>
+                    </h2>
+                    <p class="my-6">Thank you for visiting my portfolio! If you have any questions, inquiries, or collaboration opportunities, I’d love to hear from you. Please fill out the contact form or reach out through the provided social media links, and I’ll get back to you as soon as possible.</p>
+
+                    <ul>
+                        <li class="my-2"><a class="flex gap-4 items-center" href="tel:+923153987478"><i class="fa fa-phone bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center" aria-hidden="true"></i> +92 3153987478</a></li>
+                        <li class="my-2"><a class="flex gap-4 items-center" href="mailto:muhammadshabbir4589@gmail.com"><i class="fa fa-envelope bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center" aria-hidden="true"></i> muhammadshabbir4589@gmail.com</a></li>
+                        <li class="my-2"><a class="flex gap-4 items-center" target="_blank" href="https://github.com/codewithshabbir"> <i class="fab fa-github bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center" aria-hidden="true"></i> codewithshabbir</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                    <div class="bg-orange-500 p-8 rounded-lg w-full max-w-xl">
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-white text-sm mb-2" for="first-name">First Name *</label>
+                                    <input type="text" id="first-name" class="w-full p-3 rounded-lg contact-input focus:ring-transparent focus-visible:outline-none text-white border-none focus:ring-2 focus:ring-purple-300" required>
+                                </div>
+                                <div>
+                                    <label class="block text-white text-sm mb-2" for="last-name">Last Name *</label>
+                                    <input type="text" id="last-name" class="w-full p-3 rounded-lg contact-input focus:ring-transparent focus-visible:outline-none text-white border-none focus:ring-2 focus:ring-purple-300" required>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                                <div>
+                                    <label class="block text-white text-sm mb-2" for="email">Email *</label>
+                                    <input type="email" id="email" class="w-full p-3 rounded-lg contact-input focus:ring-transparent focus-visible:outline-none text-white border-none focus:ring-2 focus:ring-purple-300" required>
+                                </div>
+                                <div>
+                                    <label class="block text-white text-sm mb-2" for="phone">Phone Number *</label>
+                                    <input type="text" id="phone" class="w-full p-3 rounded-lg contact-input focus:ring-transparent focus-visible:outline-none text-white border-none focus:ring-2 focus:ring-purple-300" required>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <label class="block text-white text-sm mb-2" for="subject">Subject *</label>
+                                <input type="text" id="subject" class="w-full p-3 rounded-lg contact-input focus:ring-transparent focus-visible:outline-none text-white border-none focus:ring-2 focus:ring-purple-300" required>
+                            </div>
+                            <div class="mt-4">
+                                <label class="block text-white text-sm mb-2" for="message">Message *</label>
+                                <textarea id="message" class="w-full p-3 rounded-lg contact-input focus:ring-transparent focus-visible:outline-none text-white border-none focus:ring-2 focus:ring-purple-300 h-32" required></textarea>
+                            </div>
+                            <div class="mt-6">
+                                <div class="relative block mt-8 line">
+                                    <a class="contact-btn border-2 border-white relative inline-block text-[16px] leading-[50px] font-bold bg-transparent rounded-xl px-[35px] pt-[1px] pb-0 overflow-hidden font-sans capitalize transition-all ease-linear duration-300 text-white hover:text-orange-500 z-[1]" target="_blank" href="https://html-template-task.netlify.app/">
+                                      Submit
+                                      <i class="fa fa-arrow-right ml-1 inline-block text-sm font-bold"></i>
+                                      <span class="hover-btn hover-bx"></span>
+                                      <span class="hover-btn hover-bx2"></span>
+                                      <span class="hover-btn hover-bx3"></span>
+                                      <span class="hover-btn hover-bx4"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
         
             
     </main>
-    <footer></footer>
+    <footer class="px-4 lg:px-20">
+        <div class="bg-black w-full rounded-tl-[30px] rounded-tr-[30px] p-10 pb-0">
+            <h2>Let's Connect there</h2>
+            <div class="grid grid-cols-12 gap-6 border-b-[1px] pb-6">
+                <div class="col-span-12 lg:col-span-4">
+                    <div class="logo">
+                        <img src="./assets/images/muhammad-shabbir-logo.png" alt="">
+                        <p class="text-gray-300 text-sm">
+                            Hi, I'm Muhammad Shabbir, a passionate web developer with expertise in creating modern, responsive websites. With a strong background in HTML, CSS, JavaScript, and WordPress, I specialize in delivering high-quality web solutions. Explore my portfolio to see my latest projects and get in touch for collaborations!
+                        </p>
+                        <ul class="flex gap-4">
+                            <li class="my-2"><a class="flex gap-4 items-center" href=""><i class="fab fa-linkedin bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center" aria-hidden="true"></i></a></li>
+                            <li class="my-2"><a class="flex gap-4 items-center" href=""><i class="fab fa-codepen bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center" aria-hidden="true"></i></a></li>
+                            <li class="my-2"><a class="flex gap-4 items-center" target="_blank" href="https://github.com/codewithshabbir"> <i class="fab fa-github bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-2">
+                    <h2 class="text-white mb-4 text-xl">Navigation</h2>
+                    <ul>
+                        <li class="leading-6"><a class="text-sm text-gray-300" href="#">Home</a></li>
+                        <li class="leading-6"><a class="text-sm text-gray-300" href="#">About</a></li>
+                        <li class="leading-6"><a class="text-sm text-gray-300" href="#">Service</a></li>
+                        <li class="leading-6"><a class="text-sm text-gray-300" href="#">Resume</a></li>
+                        <li class="leading-6"><a class="text-sm text-gray-300" href="#">Project</a></li>
+                        <li class="leading-6"><a class="text-sm text-gray-300" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-12 lg:col-span-3">
+                    <h2 class="text-white mb-4 text-xl">Contact</h2>
+                    <ul>
+                        <li class="flex items-center gap-2 leading-6">
+                            <i class="fa fa-phone text-white" aria-hidden="true"></i>
+                            <a class="text-sm text-gray-300" href="tel:+923153987478">+92 3153987478</a>
+                        </li>
+                        <li class="flex items-center gap-2 leading-6">
+                            <i class="fa fa-globe text-white" aria-hidden="true"></i>
+                            <a class="text-sm text-gray-300" href="https://codewithshabbir.github.io/Portfolio/">My Website</a>
+                        </li>
+                        <li class="flex items-center gap-2 leading-6">
+                            <i class="fa fa-envelope text-white" aria-hidden="true"></i>
+                            <a class="text-sm text-gray-300" href="mailto:muhammadshabbir4589@gmail.com">muhammadshabbir4589@ <br>gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2 leading-6">
+                            <i class="fa fa-map text-white" aria-hidden="true"></i>
+                            <a class="text-sm text-gray-300" href="#">Karachi, Pakistan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-span-12 lg:col-span-3">
+                    <h2 class="text-white mb-4 text-xl">Get the latest information</h2>
+                    <div class="bg-gray-300 h-10 flex rounded-lg">
+                        <input type="text" placeholder="Email Address" class="h-full w-[100%] p-3 rounded-tl-lg rounded-bl-lg focus:ring-transparent focus-visible:outline-none text-black border-none">
+                        <i class="fa-solid fa-angles-right bg-orange-500 w-12 flex justify-center items-center cursor-pointer text-white rounded-tr-lg rounded-br-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center py-5 text-white">
+                © <span id="copyrightCurrentYear">2024</span> 
+                <b class="font-bold">Restoran.</b> 
+                All rights reserved. Design by 
+                <a href="https://www.linkedin.com/in/codewithshabbir/" class="font-bold underline text-orange-400 hover:text-orange-500">
+                    Muhammad Shabbir
+                </a>
+            </p>            
+        </div>
+    </footer>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

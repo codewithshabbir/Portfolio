@@ -130,6 +130,23 @@
   src: local("Lufga Black Italic"), url("./../fonts/LufgaBlackItalic.woff") format("woff");
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e3dfdf;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F97316;
+  border-radius: 5px;
+}
+
 body {
     font-family: "Lufga Medium";
     overflow-x: hidden;
@@ -329,12 +346,24 @@ border: 1.3px solid white;
 
 /* projects end */
 
+/* contact start */
 
+.contact-input{
+  background: rgba( 255, 255, 255, 0.25 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
+.contact-btn span{
+  background-color: white;
+}
 
-
-
-
+.contact-btn:hover .hover-btn {
+  opacity: 1;
+  transform: scaleX(1);
+}
 
 
 
