@@ -133,7 +133,30 @@
 body {
     font-family: "Lufga Medium";
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
+/* header start */
+
+header > nav > ul > li::after, #mobile-menu > ul > li::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.17rem;
+  background-color: #ea580c;
+  left: 0;
+  bottom: 0;
+  transform-origin: 0% 100%;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+header > nav > ul > li:hover::after, #mobile-menu > ul > li:hover::after {
+  transform: scaleX(1);
+}
+/* header end */
+
+/* banner start */
 
 .slide-button-wrapper {
   border: 2px solid rgba(255, 255, 255, 0.3);
@@ -154,6 +177,71 @@ body {
  {
     transform: translateX(100%);
 }
+
+/* banner end */
+
+/* service start */
+
+
+
+.service{
+    border-radius: 46px;
+    background-image: url('./../images/abstract-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;;
+}
+
+.service::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 46px;
+  left: 0;
+  background: rgba( 255, 255, 255, 0.10);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.4 );
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border: 1px solid rgba( 255, 255, 255, 0.2 );
+}
+
+
+.services-layer-one {
+  background-color: #757575;
+  width: 80%;
+}
+
+.services-layer-two {
+  width: 90%;
+  background-color: #9E9D9D;
+}
+
+.inverted-radius {
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1.3px solid white;
+
+  --r: 25px; /* the radius */
+  --s: 40px; /* the size of the corner*/
+  
+  width: 250px;
+  aspect-ratio: 1;
+  border-radius: var(--r);
+  --_m:/calc(2*var(--r)) calc(2*var(--r))
+    radial-gradient(#000 70%,#0000 72%) no-repeat;
+  mask:
+    right 0 bottom calc(var(--s) + var(--r)) var(--_m),
+    right calc(var(--s) + var(--r)) bottom 0 var(--_m),
+    radial-gradient(var(--s) at 100% 100%,#0000 99%,#000 101%) 
+     calc(-1*var(--r)) calc(-1*var(--r)) no-repeat,
+    conic-gradient(from 90deg at calc(100% - var(--s) - 2*var(--r)) calc(100% - var(--s) - 2*var(--r)),
+     #0000 25%,#000 0);
+}
+
+/* service end */
 
 .about-me-overlay {
   background-image: url('./../images/abstract-bg.png'); /* Image background */
@@ -182,27 +270,6 @@ body {
 }
 
 
-.service{
-  background-image: url('./../images/abstract-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.service::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  background: rgba( 255, 255, 255, 0.10 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 0px );
-  -webkit-backdrop-filter: blur( 0px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-
 @keyframes slide {
   to {
     transform: translateX(calc(-100% - 20px));
@@ -218,43 +285,8 @@ body {
 
 
 
-.services-layer-one {
-  background-color: #757575;
-  width: 80%;
-}
-
-.services-layer-two {
-  width: 90%;
-  background-color: #9E9D9D;
-}
 
 
-
-
-.inverted-radius {
-  background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-
-  --r: 25px; /* the radius */
-  --s: 40px; /* the size of the corner*/
-  
-  width: 250px;
-  aspect-ratio: 1;
-  border-radius: var(--r);
-  --_m:/calc(2*var(--r)) calc(2*var(--r))
-    radial-gradient(#000 70%,#0000 72%) no-repeat;
-  mask:
-    right 0 bottom calc(var(--s) + var(--r)) var(--_m),
-    right calc(var(--s) + var(--r)) bottom 0 var(--_m),
-    radial-gradient(var(--s) at 100% 100%,#0000 99%,#000 101%) 
-     calc(-1*var(--r)) calc(-1*var(--r)) no-repeat,
-    conic-gradient(from 90deg at calc(100% - var(--s) - 2*var(--r)) calc(100% - var(--s) - 2*var(--r)),
-     #0000 25%,#000 0);
-}
 
 
 
@@ -269,3 +301,8 @@ backdrop-filter: blur( 0px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+
+
+
+
