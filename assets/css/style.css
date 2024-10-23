@@ -242,32 +242,6 @@ border: 1.3px solid white;
 
 /* about start */
 
-.about-me-overlay {
-  background-image: url('./../images/abstract-bg.png'); /* Image background */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.25); /* Transparent white overlay */
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(4.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.about-me-img {
-  background-image: url('./../images/about-me-1.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.about-me-img-box img {
-  max-width: 465px;
-  width: 465px;
-  top: -82px;
-  left: -40px;
-  
-}
-
 .hover-btn {
   position: absolute;
   top: 0;
